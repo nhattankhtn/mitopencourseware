@@ -1,0 +1,14 @@
+#include <iostream >
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+
+void setStringPt(char **a){
+	*a = "Chao";
+}
+
+void main(){
+	char* b;
+	setStringPt(&b);
+	cout<<b;
+}
