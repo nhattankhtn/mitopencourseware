@@ -1,0 +1,15 @@
+#include <iostream >
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+
+int* getPtrToFive() { 
+ int x = 6; 
+ return &x; 
+} 
+ 
+int main() { 
+ int *p = getPtrToFive(); 
+ cout << *p << endl; // -> 6
+ cout << *p << endl; // -> 1369293792 (or something not expected)
+} 
